@@ -8,7 +8,7 @@ public class GuessTheNumber {
         Scanner numberGame = new Scanner(System.in);
 
         int number = 1 + (int) (100 * Math.random());
-        int trying = 10;
+        int trying = 25;
         int i, guess;
 
         System.out.println("A number is chosen " + "between 1 and 100." + " Guess the number.");
