@@ -8,7 +8,7 @@ public class GuessTheNumber {
         Scanner numberGame = new Scanner(System.in);
 
         int number = 1 + (int) (100 * Math.random());
-        int trying = 25;
+        int trying = 100;
         int i, guess;
 
         System.out.println("A number is chosen " + "between 1 and 100." + " Guess the number.");
@@ -23,10 +23,10 @@ public class GuessTheNumber {
                 break;
             }
             else if (number > guess && i != trying - 1) {
-                System.out.println("The number is " + "greater than " + guess);
+                System.out.println("The number is greater than " + guess);
             }
             else if (number < guess && i != trying - 1) {
-                System.out.println("The number is" + " less than " + guess);
+                System.out.println("The number is less than " + guess);
             }
         }
     }
