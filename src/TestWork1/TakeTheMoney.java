@@ -1,7 +1,6 @@
 package TestWork1;
 
 import java.util.Scanner;
-import java.util.Arrays;
 import java.lang.Math;
 
 public class TakeTheMoney {
@@ -9,11 +8,11 @@ public class TakeTheMoney {
     // Example: 15 =>
     //  1 = 1 EUR coin, 1 = 0.50 EUR coin.
     // Coins available: 2 and 1 EUR (100,200), 50,20, 10, 2, 1 cents.
-    //  use 2 arrays for calculations/results.
+    //  ?use 2 arrays for calculations/results.
 
     public static void main(String[] args) {
         int [] coinList =  {1, 2, 5, 10, 20, 50, 100, 200};
-        int [] givenCoins = {   0,    0,    0,    0,    0,    0,    0,    0};
+        int [] givenCoins = {10, 10, 10, 10, 10, 10, 10, 10};
 
 
         System.out.println("Enter your amount for coin exchange and press enter.");
@@ -29,7 +28,9 @@ public class TakeTheMoney {
                 value = value % coin;
                     if(count > 0) {
                         if (coin >= 100) {
-                            System.out.println(count + " coins of " + coin + " cent");
+                            System.out.println(count + " coin(s) of " + (coin / 100) + " Euro");
+                        } else {
+                            System.out.println(count + " coin(s) of " + coin + " cent");
                         }
                     }
                     i--;
